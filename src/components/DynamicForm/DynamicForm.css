@@ -1,0 +1,68 @@
+.dynamic-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 600px;
+  max-width: 1200px;
+}
+
+.form-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-submit {
+  background-color: #4299e1;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #3182ce;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .dynamic-form {
+    min-width: 100%;
+  }
+  
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
